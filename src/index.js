@@ -2,16 +2,20 @@ const MILLISECONDS_PER_DAY = 24 * 60 * 60 * 1000;
 
 /**
  * @typedef {Object} FormatEasyDateOptions
+ * 相対表現の基準日です。省略時は現在日時を使います。
+ *
  * @property {Date} [referenceDate]
  */
 
 /**
  * @typedef {Object} FormatEasyDateTimeOptions
+ * 相対表現の基準日です。省略時は現在日時を使います。
+ *
  * @property {Date} [referenceDate]
  */
 
 /**
- * Format a Date into easy-to-read Japanese date and time text.
+ * Date を受け取り、やさしい日本語の日時表現に変換します。
  *
  * @param {Date} date
  * @param {FormatEasyDateTimeOptions} [options]
@@ -27,7 +31,7 @@ export function formatEasyDateTimeJa(date, options = {}) {
 }
 
 /**
- * Format only the date portion with relative Japanese labels.
+ * 日付部分だけを相対表現を含む日本語で返します。
  *
  * @param {Date} date
  * @param {FormatEasyDateOptions} [options]
@@ -58,7 +62,7 @@ export function formatEasyDateJa(date, options = {}) {
 }
 
 /**
- * Format only the time portion with Japanese day-part labels.
+ * 時刻部分だけを時間帯ラベル付きの日本語で返します。
  *
  * @param {Date} date
  * @returns {string}
