@@ -1,0 +1,28 @@
+{
+  "name": "easy-date",
+  "version": "0.1.0",
+  "description": "厚生労働省の推奨するフォーマットに従って、JavaScriptのDateオブジェクトを簡単に読みやすい日本語の日付と時刻のテキストに変換し推奨。",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "default": "./src/index.js"
+    }
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "date",
+    "japanese",
+    "easy-date",
+    "accessibility"
+  ],
+  "license": "MIT"
+}
