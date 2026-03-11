@@ -1,7 +1,7 @@
 {
-  "name": "easy-date",
+  "name": "@ter4uchi/easy-date",
   "version": "0.1.0",
-  "description": "厚生労働省の推奨するフォーマットに従って、JavaScriptのDateオブジェクトを簡単に読みやすい日本語の日付と時刻のテキストに変換し推奨。",
+  "description": "Format JavaScript Date values into easy-to-read Japanese date and time text.",
   "type": "module",
   "main": "./src/index.js",
   "types": "./src/index.d.ts",
@@ -16,13 +16,33 @@
     "src"
   ],
   "scripts": {
-    "test": "node --test"
+    "test": "node --test",
+    "prepublishOnly": "npm test"
   },
   "keywords": [
     "date",
     "japanese",
     "easy-date",
-    "accessibility"
+    "accessibility",
+    "format",
+    "datetime",
+    "a11y"
   ],
+  "author": "ter4uchi",
+  "homepage": "https://github.com/ter4uchi/easy-date#readme",
+  "bugs": {
+    "url": "https://github.com/ter4uchi/easy-date/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ter4uchi/easy-date.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
   "license": "MIT"
 }

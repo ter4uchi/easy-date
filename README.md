@@ -14,13 +14,13 @@
 ## Install
 
 ```bash
-npm install easy-date
+npm install @ter4uchi/easy-date
 ```
 
 ## Usage
 
 ```js
-import { formatEasyDateTimeJa } from "easy-date";
+import { formatEasyDateTimeJa } from "@ter4uchi/easy-date";
 
 const referenceDate = new Date(2026, 2, 11, 9, 0);
 const eventDate = new Date(2026, 2, 11, 16, 0);
@@ -68,3 +68,21 @@ console.log(formatEasyDateTimeJa(eventDate, { referenceDate }));
 ```bash
 npm test
 ```
+
+## Publish
+
+公開前に次を実行します。
+
+```bash
+npm test
+npm pack --dry-run
+```
+
+初回公開または新バージョン公開は次のコマンドです。
+
+```bash
+npm login
+npm publish
+```
+
+パッケージ名は `@ter4uchi/easy-date` に設定しています。`easy-date` は既存パッケージと衝突する可能性があるため、スコープ付き公開を前提にしています。
