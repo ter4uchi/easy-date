@@ -1,4 +1,4 @@
-# eady-date
+# easy-date
 
 `Date` を受け取って、やさしい日本語の日時表現を返す小さな npm パッケージです。
 
@@ -14,13 +14,13 @@
 ## Install
 
 ```bash
-npm install eady-date
+npm install easy-date
 ```
 
 ## Usage
 
 ```js
-import { formatEasyDateTimeJa } from "eady-date";
+import { formatEasyDateTimeJa } from "easy-date";
 
 const referenceDate = new Date(2026, 2, 11, 9, 0);
 const eventDate = new Date(2026, 2, 11, 16, 0);
