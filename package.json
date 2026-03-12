@@ -1,6 +1,6 @@
 {
   "name": "@ter4uchi/easy-date",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Format JavaScript Date values into easy-to-read Japanese date and time text.",
   "type": "module",
   "main": "./src/index.js",
